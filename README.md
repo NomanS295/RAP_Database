@@ -1,10 +1,15 @@
 # RAP_Database
-Enhanced Version with Database Integration, Whitelisting, and Alert System
-This project scans Wi-Fi networks to detect Rogue Access Points and Evil Twin attacks.
-It saves all scan results and alerts to an SQLite database (wifi_scanner.db) and JSON files (scan_results.json and alert.json).
-A whitelist system is also included to flag known safe networks.
+- Enhanced Version with Database Integration, Whitelisting, and Alert System
+- This project scans Wi-Fi networks to detect Rogue Access Points and Evil Twin attacks.
+- It saves all scan results and alerts to an SQLite database (wifi_scanner.db) and JSON files (scan_results.json and alert.json).
+- A whitelist system is also included to flag known safe networks.
 
-# Step 1: Install Dependencies and clone the project 
+# Step 1: Install Dependencies and clone the project + make sure network interface is in monitor mode 
+```
+sudo ip link set wlxcc641aeb88bf down
+sudo iw wlxcc641aeb88bf set monitor control
+sudo ip link set wlxcc641aeb88bf up
+```
 ```
 sudo apt update
 sudo apt install python3 python3-pip sqlite3

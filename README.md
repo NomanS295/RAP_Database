@@ -66,9 +66,9 @@ nano whitelist.txt
 add some enteries into the whitelist for the networks you trust 
 for example:
 
--BELL683,54:64:d9:f6:32:f8
--Meshy mesh,e0:b2:60:42:85:89
--ONE DIRECTION,64:66:24:ff:63:4e
+- BELL683,54:64:d9:f6:32:f8
+- Meshy mesh,e0:b2:60:42:85:89
+- ONE DIRECTION,64:66:24:ff:63:4e
 
 
 # Step 5: Scan.py code 
